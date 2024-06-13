@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character set, viewport, description, and robots -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is the webpage for assignment 2">
+    <meta name="robots" content="nofollow, noindex">
+    <title>Pizza Shop</title>
+    <!-- Linking to external CSS file -->
+    <link rel="stylesheet" href="Assignment2.css">
+</head>
+<body>
+    <!-- Header section -->
+    <header>
+        <!-- Logo -->
+        <div class="pizzaLogo">
+            <img src="./IMG/imgbin_pizza-logo-png.png" alt="Logo">
+        </div>
+        <!-- Page title -->
+        <h1>
+            Make Your Own Pizza
+        </h1>
+        <!-- Navigation menu -->
+        <nav>
+            <ul>
+                <li><a href="#order-form-section">Order</a></li>
+                <li><a href="#contact-section">Contact</a></li>
+                <li><a href="#about-section">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Main content section -->
+    <main>
+        <!-- Order form section -->
+        <section id="order-form-section">
+            <!-- Form title -->
+            <h2>Order Your Pizza</h2>
+            <!-- Pizza order form -->
+            <form>
+                <!-- Name input -->
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <!-- Email input -->
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <!-- Phone number input -->
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <!-- Address input -->
+                <div class="form-group">
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" name="address" required>
+                </div>
+
+                <!-- Number of pizzas input -->
+                <div class="form-group">
+                    <label for="pizzas">How many pizzas?</label>
+                    <input type="number" id="pizzas" name="pizzas" min="1" required>
+                </div>
+
+                <!-- Pizza size selection -->
+                <div class="form-group">
+                    <label for="size">Pizza Size:</label>
+                   <select id="size" name="size" required>
+                      <option value="" disabled selected>Select a size</option>
+                      <option value="small">Small</option>
+                      <option value="medium">Medium</option>
+                      <option value="large">Large</option>
+                   </select>
+                </div>
+
+                <!-- Toppings selection -->
+                <div class="form-group">
+                    <h3>Choose your toppings:</h3>
+                    <div>
+                        <input type="checkbox" id="pepperoni" name="toppings" value="pepperoni">
+                        <label for="pepperoni">Pepperoni</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="mushrooms" name="toppings" value="mushrooms">
+                        <label for="mushrooms">Mushrooms</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="onions" name="toppings" value="onions">
+                        <label for="onions">Onions</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="sausage" name="toppings" value="sausage">
+                        <label for="sausage">Sausage</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="bacon" name="toppings" value="bacon">
+                        <label for="bacon">Bacon</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="extra-cheese" name="toppings" value="extra-cheese">
+                        <label for="extra-cheese">Extra Cheese</label>
+                    </div>
+                </div>
+
+                <!-- Crust type selection -->
+                <div class="form-group">
+                    <h3>Choose your crust:</h3>
+                    <div>
+                        <input type="radio" id="HT" name="crust" value="HT" required>
+                        <label for="HT">Hand Tossed</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="NYS" name="crust" value="NYS" required>
+                        <label for="NYS">New York Style</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="HP" name="crust" value="HP" required>
+                        <label for="HP">Handmade Pan</label>
+                    </div>
+                </div>
+
+                <!-- Special instructions textarea -->
+                <div class="form-group">
+                    <label for="special-instructions">Any Special Instructions:</label>
+                    <textarea id="special-instructions" name="special-instructions"></textarea>
+                </div>
+
+                <!-- Coupon code input -->
+                <div class="form-group">
+                    <label for="CC">Enter Coupon code:</label>
+                    <input type="text" id="CC" name="CC">
+                </div>
+
+                <!-- Oregano and chili flakes choice -->
+                <div class="form-group">
+                    <label>Do you want Oregano and Chili Flakes?</label>
+                    <div>
+                        <input type="radio" id="oregano-chili-yes" name="oregano-chili" value="yes" checked>
+                        <label for="oregano-chili-yes">Yes</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="oregano-chili-no" name="oregano-chili" value="no">
+                        <label for="oregano-chili-no">No</label>
+                    </div>
+                </div>
+
+                <!-- Submit button -->
+                <button type="submit"><a href="ConfirmationPage.html">Submit Order</a></button>
+            </form>
+        </section>
+    </main>
+    <!-- Footer section -->
+    <footer>
+        <!-- Copyright information -->
+        <p>&copy; 2024 Pizza Shop</p>
+    </footer>
+</body>
+</html>

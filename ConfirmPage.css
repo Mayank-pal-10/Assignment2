@@ -1,0 +1,52 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: gray;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #086994;
+    color: #eeff00;
+    padding: 1em 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Main Content Styles */
+main {
+    padding: 2em;
+}
+
+/* Confirmation Section Styles */
+.confirmation {
+    background-color: #cbc6c6;
+    border-radius: 8px;
+    padding: 2em;
+}
+
+.confirmation h2 {
+    color: #ff9800;
+    margin-bottom: 1em;
+}
+
+.confirmation p {
+    line-height: 1.6;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #086994;
+    color: white;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
